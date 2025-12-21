@@ -9,7 +9,7 @@
 2. Launch the GitHub Codespace and build it successfully.
 
 **Glimpse of Codespace:**
-![](images/9.png)
+![](images/1.png)
 ___
 ## Verifying RISC-V Reference Flow
 
@@ -30,7 +30,7 @@ iverilog -V
 
 **Output:**
 
-
+![](images/2.png)
 
 
 ### Program 1 : `sum1ton.c`
@@ -46,7 +46,7 @@ spike pk sum1ton.o
 
 **Output:**
 
-![](images/10.png)
+![](images/3.png)
 
 
 ### Program 2 : `1ton_custom.c`
@@ -60,7 +60,7 @@ spike pk 1ton_custom.o
 
 **Output:**
 
-![](images/11.png)
+![](images/4.png)
 
 
 ### Custom Program : `factorial.c`
@@ -72,7 +72,7 @@ spike pk factorial.o
 
 **Output:**
 
-![](images/12.png)
+![](images/5.png)
 
 
 ### Verilog Program : `adder.v` (with testbench `tb.v`)
@@ -86,7 +86,7 @@ vvp adder
 
 **Output:**
 
-![](images/13.png)
+![](images/6.png)
 ___
 ## Verifying the Working of GUI Desktop (noVNC)
 
@@ -99,13 +99,13 @@ ___
 4. Compare the native and RISC-V compilers by running a program using both.
 
 ### Glimpse of Desktop
-![](images/14.png)
+![](images/7.png)
 
 ### Run Program using Native GCC
-![](images/15.png)
+![](images/8.png)
 
 ### Run Program using RISC-V GCC and Spike
-![](images/16.png)
+![](images/9.png)
 ___
 ## Clone and Build the VSDFPGA Labs
 
@@ -143,7 +143,7 @@ git clone https://github.com/vsdip/vsdfpga_labs
 ```
 
 **Verification of successful cloning:**
-![](images/17.png)
+![](images/10.png)
 
 ### Building the Firmware and FPGA bitstream 
 #### **Reviewing RISC-V Logo code :**
@@ -155,7 +155,7 @@ make riscv_logo.bram.hex
 ```
 
 **Output:**
-![](images/18.png)
+![](images/11.png)
 
 #### **Build Firmware and FPGA bitstream :**
 **Commands:**
@@ -167,7 +167,7 @@ make build
 ```
 
 **Output:**
-![](images/19.png)
+![](images/12.png)
 ___
 ## Local Machine Preparation
 
@@ -248,7 +248,7 @@ spike pk sum1ton.o
 ```
 
 **Output:**
-
+![](images/13.png)
 
 **Native GCC Commands:**
 ```bash
@@ -257,7 +257,7 @@ gcc sum1ton.c
 ```
 
 **Output:**
-
+![](images/14.png)
 
 ### FPGA Toolchain Installation and Testing 
 **Installation Commands:**
@@ -303,9 +303,14 @@ make flash
 make terminal
 ```
 
-**FPGA Testing Outputs:**
+**Firmware Build Output:**
+![](images/15.png)
 
+**Flash Verification:**
+![](images/16.png)
 
+**Glance of FPGA:**
+![](images/17.png)
 ___
 ## Understanding Check
 
